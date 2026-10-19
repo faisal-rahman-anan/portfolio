@@ -20,6 +20,9 @@ nav a[aria-current="page"]{border-color:var(--brass);font-weight:600}
 main{flex:1;padding:0 var(--gap)}
 .photo{display:block;width:100%;height:clamp(280px,42vw,540px);object-fit:cover;object-position:center 28%;border-radius:0 0 12px 12px;background:var(--steel)}
 section{padding:3rem 0}
+.hero{display:grid;gap:2rem 4rem;align-items:center;padding:2rem 0 3rem}
+.portrait{display:block;width:100%;max-width:520px;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:12px;background:var(--steel)}
+@media (min-width:800px){.hero{grid-template-columns:minmax(280px,.8fr) 1.2fr;min-height:calc(100vh - 4.5rem)}}
 .lead{font-size:1.3em;max-width:36ch;margin:1rem 0 1.8rem}
 .text{max-width:62ch}
 .btns{display:flex;flex-wrap:wrap;gap:.8rem}
