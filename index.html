@@ -9,6 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.map{margin:1.2rem 0 .8rem;border-radius:12px;overflow:hidden;background:var(--steel);height:clamp(280px,45vw,480px)}
+.map iframe{display:block;width:100%;height:100%;border:0}
+</style>
 </head>
 <body>
 <header>
@@ -39,6 +43,14 @@
       <div><h3>Kitchen plumbing</h3><p>Sinks, water filters and gas-safe pipe connections.</p></div>
       <div><h3>Water tanks and pumps</h3><p>Overhead tank lines, pump setup and pressure problems.</p></div>
     </div>
+  </section>
+  <section>
+    <h2>Where I work</h2>
+    <p class="text">I visit homes and shops in Dhanmondi, Mirpur, Uttara and nearby areas of Dhaka.</p>
+    <div class="map">
+      <iframe title="Map of Dhaka service area" src="https://www.google.com/maps?q=Dhanmondi,+Dhaka&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Dhanmondi%2C%20Dhaka" target="_blank" rel="noopener">Open in Google Maps</a></p>
   </section>
 </main>
 <footer>
