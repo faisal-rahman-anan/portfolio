@@ -9,6 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.boxes{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:1.5rem}
+.box{background:var(--white);border-radius:12px;overflow:hidden;border-bottom:6px solid var(--water)}
+.box img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--steel)}
+.box div{padding:1.2rem 1.4rem 1.5rem}
+</style>
 </head>
 <body>
 <header>
@@ -20,18 +26,31 @@
   </nav>
 </header>
 <main>
-  <img class="photo" src="images/about.svg" alt="Portrait of Rahim">
   <section>
     <h1>About me</h1>
-    <div class="text">
-      <p class="lead">I am Rahim, a plumber in Dhaka with 10 years of experience in homes and small shops.</p>
-      <p>I arrive on time, tell you the price before I start, and clean up when I finish. If something is not fixed properly, I come back and fix it again.</p>
-      <ul class="facts">
-        <li>Open Saturday to Thursday, 8am to 8pm</li>
-        <li>Emergency calls answered on Fridays</li>
-        <li>Work guaranteed for 6 months</li>
-        <li>Areas: Dhanmondi, Mirpur, Uttara and nearby</li>
-      </ul>
+    <p class="lead">Plumber in Dhaka, ready to help.</p>
+    <div class="boxes">
+      <article class="box">
+        <img src="images/about1.png" alt="Rahim, plumber">
+        <div>
+          <h3>Who I am</h3>
+          <p>I am Rahim, a plumber in Dhaka with 10 years of experience in homes and small shops.</p>
+        </div>
+      </article>
+      <article class="box">
+        <img src="images/about2.png" alt="Rahim fixing a pipe">
+        <div>
+          <h3>How I work</h3>
+          <p>I arrive on time, tell you the price before I start, and clean up when I finish. My work is guaranteed for 6 months.</p>
+        </div>
+      </article>
+      <article class="box">
+        <img src="images/about3.png" alt="Dhaka neighbourhood">
+        <div>
+          <h3>Where and when</h3>
+          <p>I work in Dhanmondi, Mirpur, Uttara and nearby. Open Saturday to Thursday, 8am to 8pm, with emergency calls on Fridays.</p>
+        </div>
+      </article>
     </div>
   </section>
 </main>
